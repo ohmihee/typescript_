@@ -7,7 +7,7 @@ class Dog{
 }
 
 class Fish {
-    constructor(readonly name:string){};
+    constructor(readonly name:String){};
 
     dive(howDeep:number):string{
         return `Diving ${howDeep}feet` 

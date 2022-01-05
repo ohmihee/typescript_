@@ -1,20 +1,22 @@
-// class Person {
-//     firstName:string;
-//     lastName:string;
-//     age:number
-// }
-
-// const p = new Person();
-// p.firstName='oh';
-// p.lastName="mihee";
-// p.age=27;
-
 class Person {
-    constructor(public firstName:string,
-                public lastName:string,
-                public age:number
-                ){}
+    public firstName = '';
+    public lastName = '';
+    private age = 0;
+
+    protected sayHello():string {
+        return `My name is ${this.firstName}${this.lastName}`
+    }
 }
 
-const p = new Person('oh','mihee',27) 
-console.log(p)
+class Employee extends Person {
+    department = 1;
+
+    reviewPerformance():void{
+        this.sayHello();
+        this.increasePay(5);
+    }
+
+    increasePay(percent:number):void {
+        
+    }
+}
