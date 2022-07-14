@@ -5,9 +5,9 @@
         "moduleResolution": "node",
         "lib": ["es2015","es2016","es2017","es2018","es2019","es2020"],
         "target": "ES5",
-        "outDir": "jsfiles",
+        "outDir": "practice/jsfiles",
         "esModuleInterop": true
     },
     "exclude": ["node_modules"],
-    "include": ["tsfiles/**/*"]
+    "include": ["practice/jsfiles/tsfiles/**/*"]
 }
