@@ -23,3 +23,12 @@ export class BlockHeader implements IBlockHeader {
         return new Date().getTime()
     }
 }
+
+/**
+declare interface IBlockHeader {
+    version: string,
+    height: number,
+    timestamp: number,
+    previousHash: string
+}
+ */
